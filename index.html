@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoPlay - Reprodutor de vídeos</title>
+
+    <!-- Link style goplay.css -->
+    <link rel="stylesheet" href="goplay.css">
+
+    <style>
+        *, *::before, *::after{margin: 0; padding: 0;}
+        .video-container{width: 500px;}
+    </style>
+
+</head>
+
+<body>
+
+    <form class="video-container" action="" method="GET">
+
+        <!-- Chamar elemento vídeo com class goplay-video -->
+        <video preload="none" class="goplay-video">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <track kind="captions" src="legenda.vtt" default>
+        </video>
+
+    </form>
+
+    <!-- Inclusão goplay -->
+    <script src="goplay.js" async></script>
+
+</body>
+
+</html>
